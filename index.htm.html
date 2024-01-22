@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--------------------|Meta|-------------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------|Title & Favicon|-------------------->
+    <title>CALCULATOR</title>
+    <!--------------------|Css|-------------------->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./fonts/diavlo.css">
+    <link rel="stylesheet" href="./fonts/bastine.css">
+</head>
+
+<body>
+    <!------------------------------|Calculator|------------------------------>
+    <main>
+        <section class="calculator">
+            <p id="answer">0</p>
+            <div class="number">
+                <button onclick="Number('7')">7</button>
+                <button onclick="Number('8')">8</button>
+                <button onclick="Number('9')">9</button>
+                <button onclick="Number('4')">4</button>
+                <button onclick="Number('5')">5</button>
+                <button onclick="Number('6')">6</button>
+                <button onclick="Number('1')">1</button>
+                <button onclick="Number('2')">2</button>
+                <button onclick="Number('3')">3</button>
+                <button onclick="Negative()">−/+</button>
+                <button onclick="Number('0')">0</button>
+                <button onclick="Number('.')">.</button>
+            </div>
+            <div class="operator"2>
+                <button onclick="operator('+')">+</button>
+                <button onclick="operator('-')">−</button>
+                <button onclick="operator('*')">×</button>
+                <button onclick="operator('/')">÷</button>
+                <button onclick="operator('x^y')">x</button>
+                <button onclick="operator('√x')">√x</button>
+                <button onclick="operator('%')">%</button>
+                <button onclick="operator('1/x')">1/x</button>
+            </div>
+            <div class="clean">
+                <button onclick="operator('c')">c</button>
+                <button onclick="operator('=')">=</button>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
